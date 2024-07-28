@@ -1,5 +1,8 @@
-import 'package:animation_starter_code/implicit_examples/animated_color_pallete.dart';
+
 import 'package:flutter/material.dart';
+
+import 'feature/Home/Presentation/homepage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(226,27,112,1)
+        ),
         useMaterial3: true,
       ),
-      home: const AnimatedColorPalette(),
+      home:  const HomePage(),
     );
   }
 }

@@ -20,6 +20,7 @@ class PulsatingCircleAnimation extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 color: Colors.blue.withOpacity(0.5),
+                blurStyle: BlurStyle.outer,
                 blurRadius: size,
                 spreadRadius: size / 2,
               ),
